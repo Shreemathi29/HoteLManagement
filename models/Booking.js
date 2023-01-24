@@ -9,24 +9,24 @@ const BookSchema = new mongoose.Schema(
         type: String,
         required: true,
       },
-   
-  
-    maxPeople: {
+   maxPeople: {
       type: Number,
       required: true,
     },
     roomNumber: Number,
-    Date: {
+    checkInDate: {
         type: [Date]
     },
-    price: {
+    checkOutDate: {
+      type: [Date]
+  },
+  price: {
         type: Number,
         required: true,
       },
-   
-    
-  },
+   },
   { timestamps: true }
 );
 
 export default mongoose.model("Booking", BookSchema);
+

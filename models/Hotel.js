@@ -20,7 +20,6 @@ const HotelSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-
   pincode:{
     type:Number
   },
@@ -29,12 +28,10 @@ const HotelSchema = new mongoose.Schema({
   },
   title: {
     type: String,
-    
-  },
+    },
   desc: {
     type: String,
-   
-  },
+   },
   rating: {
     type: Number,
     min: 0,
